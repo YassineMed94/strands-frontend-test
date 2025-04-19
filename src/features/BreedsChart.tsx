@@ -36,7 +36,7 @@ const error = useAppSelector((state) => state.breeds.error);
         outerRadius={150}
         label
       >
-        {top10.map((entry, index) => (
+        {top10.map((_, index) => (
           <Cell key={`cell-${index}`} fill={COLORS[index % COLORS.length]} />
         ))}
       </Pie>
