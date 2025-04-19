@@ -3,6 +3,7 @@ import { defineConfig } from 'vite';
 import react from '@vitejs/plugin-react';
 
 export default defineConfig({
+  base: '/strands-frontend-test/',
   plugins: [react()],
   test: {
     globals: true,
