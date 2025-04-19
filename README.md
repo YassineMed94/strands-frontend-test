@@ -1,7 +1,7 @@
 # Strands Frontend Test
 
 This is a frontend application built with React, Redux, TypeScript, and Vite. It displays a chart visualizing the top 10 dog breeds by image count, fetching data via an API using Axios. The app also includes features like dark mode, a loading spinner, and basic interactivity for a better user experience.
-
+You can visite it Live at this Link : https://6803cb3bf0bd827a608af7ae--yassine-test-frontend.netlify.app/
 ## Features
 - **Top 10 Dog Breeds Chart**: Displays a pie chart with the top 10 dog breeds based on image counts.
 - **Dark Mode**: Toggle between dark and light themes.
