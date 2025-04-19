@@ -1,54 +1,43 @@
-# React + TypeScript + Vite
+# Strands Frontend Test
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is a frontend application built with React, Redux, TypeScript, and Vite. It displays a chart visualizing the top 10 dog breeds by image count, fetching data via an API using Axios. The app also includes features like dark mode, a loading spinner, and basic interactivity for a better user experience.
 
-Currently, two official plugins are available:
+## Features
+- **Top 10 Dog Breeds Chart**: Displays a pie chart with the top 10 dog breeds based on image counts.
+- **Dark Mode**: Toggle between dark and light themes.
+- **Animated Loading Spinner**: A spinner is shown while data is being fetched.
+- **Responsive Layout**: The app is responsive, making it functional across different screen sizes.
+- **Data Fetching with Axios**: Fetches data from the API using Axios for cleaner syntax and automatic JSON parsing.
+- **Chart Rendering**: Uses the `recharts` library to render charts.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Setup
 
-## Expanding the ESLint configuration
+To run the project locally, follow the steps below:
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+### 1. Clone the repository
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+```bash
+git clone <repository_url>
+cd <project_name>
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+### 2. Install dependencies
+npm install
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+### 3.Run the development server
+npm run dev
 
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
-```
+### 4.Technologies Used
+
+React: The UI is built using React, a component-based JavaScript library.
+
+Redux Toolkit: Manages the app’s state with Redux.
+
+TypeScript: The app is written in TypeScript for type safety.
+
+Vite: Used as the build tool for fast development and bundling.
+
+Axios: For making HTTP requests to fetch breed data from the API.
+
+Recharts: For rendering interactive charts.
+
+Vitest: For running unit tests
